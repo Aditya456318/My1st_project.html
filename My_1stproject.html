@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Login | Signup Form</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      background: #252525;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      font-family: sans-serif;
+    }
+
+    .form-box {
+      width: 316px;
+      height: 476px;
+      position: relative;
+      background: #252525;
+      padding: 5px;
+      overflow: hidden;
+      z-index: 5;
+      border-radius: 20px;
+      box-shadow: 0 0 20px #ffffff;
+      transition: 0.5s;
+    }
+
+    .button-box {
+      width: 220px;
+      margin: 35px auto 30px auto;
+      position: relative;
+      border-radius: 30px;
+      display: flex;
+      justify-content: space-around;
+      animation: animBTN 5s linear infinite;
+    }
+
+    .button-box button {
+      padding: 10px 20px;
+      border: none;
+      border-radius: 30px;
+      background: #00f0ff;
+      color: #000;
+      font-weight: bold;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .button-box button:hover {
+      background: #00c0cc;
+    }
+
+    @keyframes animBTN {
+      0% { transform: scale(1); background-color: #333; }
+      50% { transform: scale(1.05); background-color: #555; }
+      100% { transform: scale(1); background-color: #333; }
+    }
+
+    .social-icons {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .social-icons i {
+      color: #00f0ff;
+      font-size: 24px;
+      margin: 0 10px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .social-icons i:hover {
+      color: #fff;
+    }
+
+    .input-group {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 15px;
+      padding: 0 20px;
+    }
+
+    .input-group input {
+      width: 100%;
+      padding: 10px;
+      border: none;
+      outline: none;
+      border-bottom: 2px solid #00f0ff;
+      background: transparent;
+      color: white;
+    }
+
+    .submit-btn {
+      width: 100%;
+      padding: 10px;
+      background: #00f0ff;
+      color: #000;
+      font-weight: bold;
+      border: none;
+      border-radius: 20px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .submit-btn:hover {
+      background: #00c0cc;
+    }
+  </style>
+
+  <!-- Font Awesome Icons CDN -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body>
+
+  <div class="form-box">
+    <div class="button-box">
+      <button id="loginBtn">Log in</button>
+      <button id="registerBtn">Register</button>
+    </div>
+
+    <div class="social-icons">
+      <i class="fab fa-facebook-f"></i>
+      <i class="fab fa-instagram"></i>
+      <i class="fab fa-github"></i>
+    </div>
+
+    <form class="input-group">
+      <input type="text" placeholder="User" required>
+      <input type="email" placeholder="Email" required>
+      <input type="password" placeholder="Password" required>
+      <button type="submit" class="submit-btn">Register</button>
+    </form>
+  </div>
+
+</body>
+</html>
